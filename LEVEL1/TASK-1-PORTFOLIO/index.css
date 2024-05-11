@@ -1,0 +1,286 @@
+*{ margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;}
+
+
+
+
+html { scroll-behavior: smooth;}
+
+
+
+
+/*ADDING CSS FOR BODY*/
+body{ background: #080808;
+    color: #fff;}
+
+/* USED # AS HEADER IN HTML IS AN ID*/
+#header { width: 100%;
+    height: 100vh;
+    background-image: url(images/Portfolio.jpg);   /* SYNTAX: FOLDER/IMAGE NAME*/
+    background-size: cover;
+    background-position: center;
+}           /*REFRESH THE BROWSER PIC AGAI HOGI*/
+
+
+/*NOW WE'LL MAKE A NAVIGATION BAR TO ADD MENUS*/
+.container { padding: 10px 4%;}    /*10px FROM TOP TO BOTTOM AND 10% FROM LEFT TO RIGHT*/
+
+
+/*NOW WE'LL ADD CSS FOR NAVIGATION BAR (MENUS)*/
+nav{ display: flex;    /*LOGO AND MENUS SIDE BY SIDE*/
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;}
+
+/*FOR CHANGING SIZE OF LOGO, ALIGNMENT OF MENUS AND GIVE THEN COLOR*/
+
+.logo{ width: 400px;} /*FOR LOGO*/
+
+/* FOR MENUS*/
+nav ul li { display: inline-block;  /*WILL BE HORIZONTALLY IN-LINE*/
+           list-style: none;
+           margin: 10px 20px; /*TO GET SPACE BETWEEN MENUS (10px from top & bottom and 20px from left & right)*/
+}
+
+/*TO REMOVE UNDERLINE AND TO ADD COLOR*/
+nav ul li a { color: blanchedalmond;
+             text-decoration: none; /*TO REMOVE UNDERLINE*/
+             font-size: 19px;
+             position: relative;}
+
+/*TO ADD HOVER EFFECT*/
+nav ul li a::after { content: '';
+                    width: 0%;
+                    height: 3px;
+                    background: #7a7171;
+                    position: absolute; /*SINCE WE ADDED ABSOLUTE HERE THEN ADD RELATIVE IN ABOVE*/
+                    left: 0;
+                    bottom: -6px;
+                    transition: 0.5s;
+}  /*NOW WE HAVE TO HIDE THE LINE & ONLY MAKE IT VISIBLE WHEN HOVERING (so make the width in this zer to make it hidden)*/
+
+nav ul li a:hover::after { width: 100%;}  /*ADD TRANSITION ABOVE*/
+
+/*TO CHANGE POSITION OF TEXT AND FONT SIZE*/
+.header-text { margin-top: 7%;
+              font-size: 30px;}
+
+.header-text  h1 { font-size: 60px;
+                  margin-top: 7px;
+                  color: bisque;
+                  text-shadow: 2px 2px 4px #7a7171;}     
+                  
+/*TO ADD COLOR TO FATIMA KHAN*/
+.header-text  h1 span { color: #7a7171;
+                        text-shadow: 2px 2px 4px blanchedalmond;}
+p { color: blanchedalmond;}
+
+/*----------------------------ABOUT-----------------------------*/
+
+#about { padding: 80px 0;  /* 80 PX FROM TOP & BOTTOM AND ) FROM LEFT & RIGHT */
+        color: bisque;}
+
+
+ /* TO BRING ABOUT ME TO RIGHT SIDE*/
+.row { display: flex;    /* TO GET CONTENT SIDE BY SIDE*/
+      justify-content: space-between;
+      flex-wrap: wrap;}  
+      
+/*NOW FOR THE WIDTH OF THE TWO COLUMNS*/  
+.about-col1 { order: -3;} /* COLUM 1 WIDTH*/
+.about-col1 img { width: 50%;
+                 border-radius: 15px;
+                 order: -1;} /* CORNERS OF PIC WILL BE ROUND*/           
+
+.about-col2 { order: -2;}
+
+.abouttitle { font-size: 80px;
+           font-weight: 600;
+           color: #7a7171;
+           text-shadow: 2px 2px 4px blanchedalmond;}
+        
+/* PARAGRAPH KE LIYE CLASS BANAYI HE*/
+.para{ margin: 40px 0 0;
+      font-size: 19px;}           
+
+/*TO ALIGN SKILLS EXPERIENCE AND EDUCATION TABS*/           
+.tabtitles { display: flex;
+             margin: 20px 0 40px;} /*20 FROM TOP 0 FROM LEFT AND RIGHT AND 40 FROM BOTTOM*/
+              
+.tablinks{ margin-right: 165px;     
+        font-size: 30px;  
+        font-weight: 500;  
+        cursor: pointer;
+        position: relative;
+        text-shadow: 2px 2px 4px #7a7171}
+
+/*JUS AS NAVIGATION BAR TO ADD HOVER EFFECT*/
+.tablinks::after { content: '';
+                   width: 0;
+                   height: 3px;
+                   background: #7a7171;
+                   position: absolute;
+                   left: 0;
+                   bottom: -8px;
+                   transition: 0.5s;}  
+
+.tablinks.active::after { width: 50%;}
+
+.tabdescription ul li { list-style: none;
+                       font-size: 20px;
+                       margin: 10px, 0;}
+
+.tabdescription ul li span{ color: #7a7171;
+                           font-size: 20px;}
+
+.tabdescription { display: none;} /* TO HIDE ALL TAB DESCRIPTION*/
+
+.tabdescription.active { display: block;}
+
+/*TO DISPLAY DESCRIPTION ONLY WHEN WHEN CLICKED ON TAB*/
+/*TAB LINKS PER ONCLICK FEATURE LAGA KAR OS KO TAB DECRIPTION K ANDER ID BANA KAR DALNA HE (IN HTML)*/
+/*WE'LL USE JAVASCRIPT INSIDE A SCRIPT TAG (IS SAY SKILLS EXP. EDU. ETC TINO PER CLICK KARNAY SAY DESCRIPTION REMOVE HOGI)*/
+
+/*---------------------------------------SERVICES-------------------------------------*/
+
+#services { padding: 30px, 0;}
+
+h1.servicestitle{ font-size: 80px;
+               font-weight: 600;
+               color: #7a7171;
+               text-shadow: 2px 2px 4px blanchedalmond;}
+h2 { font-size: 30px;
+    font-weight: 500px;
+    color: rgb(245, 197, 138);
+    text-shadow: 2px 2px 4px rgb(51, 41, 27);}               
+
+.serviceslist{ display: grid;
+              grid-template-columns: 1fr 1fr 1fr; /* FOR 3 COLUMNS SIDE BY SIDE*/
+              grid-gap: 40px;
+              grid-column-gap: 60px ;
+              margin-top: 50px;
+              font-size: 20px;}
+
+
+/*BOX KO SEPARATE KARNAY K LIYE*/
+            .serviceslist > div {
+                background: #949393; /* DEFAULT BACKGROUND COLOR */
+                padding: 20px; /* ADD SOME PADDING TO EACH COLUMN */
+                border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;}
+              
+              /* SET BACKGROUND COLORS FOR EACH COLUMN */
+              .serviceslist > div:nth-child(1) {
+                background:#1c1c2a;} /* FIRST COLUMN BACKGROUND COLOR */
+              
+              .serviceslist > div:nth-child(2) {
+                background: #1c1c2a;} /* SECOND COLUMN BACKGROUND COLOR */
+              
+              .serviceslist > div:nth-child(3) {
+                background: #1c1c2a;} /* THIRD COLUMN BACKGROUND COLOR */
+            
+
+.fontsize { font-size: 60px;} 
+
+.widthheight { width: 140px; /* Adjust width as needed */
+              height: auto;
+              margin-left: 10px;
+              margin-right: 10px;}
+
+.widthheight1 { width: 65px; height: auto;}
+
+/*TO DECORATE LINK LEARN MORE*/
+.serviceslist div a { text-decoration: none;
+    color: rgb(245, 197, 138);;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(51, 41, 27);
+    display: inline-block;}
+
+ /*TO ADD HOVER EFFECT*/ 
+ .serviceslist div:hover {background: rgb(112, 101, 87);
+                            transform: translateY(-10px); }
+  
+/*----------------------------------MY WORK-----------------------------------*/
+
+/*TO ADD SOME SPACE*/
+#portfolio{ padding: 50px /*FROM TOP AND BOTTOM*/    0 /*LEFT & RIGHT*/;}
+
+.portfoliotitle {font-size: 80px;
+               font-weight: 600;
+               color: #7a7171;
+               text-shadow: 2px 2px 4px blanchedalmond;}
+
+.worklist {
+    justify-content: space-between;
+    align-items: center; /* Align playlists vertically centered */}
+
+    .worklist .work2 { flex: 1; /* Let the playlist take up remaining space */
+                      margin: 0 10px; /* Adjust spacing between playlist and other elements */}
+
+.worklist .work2 .sk-ww-youtube-playlists {width: 100%;}
+
+/*-------------------------------------CONTACT-------------------------------------------------------------------*/
+
+.contactleft { flex-basis: 35%;}
+
+.contactleft p { margin-top: 10px;}
+
+.mailphone { color: #978f8f; margin-right: 15px; font-size: 25px;}
+
+.icon-color { color: bisque; text-decoration: none; font-size: 30px; margin-right: 15px; display: inline-block; transition: transform 0.5s;}
+
+.icon-color:hover { color: #7a7171; transform: translateY(-5px);}
+
+.resumebutton { display: block;
+               margin: 50px auto;
+               width:fit-content;
+               border:1px solid #7a7171;
+               padding: 14px 50px;
+               border-radius: 15px;
+               text-decoration: none;
+               color: blanchedalmond;
+               transition: background 0.5s;}
+
+.resumebutton:hover { 
+    background: #7a7171;}               
+
+
+
+.contactright form { width:100%;}
+
+form input, form textarea { width: 100%; border: 0; outline: none; background: rgb(146, 140, 133); padding: 15px; margin: 15px 0; color: blanchedalmond; font-size: 18px; border-radius: 6px;}
+
+
+.submitbtn { display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border:1px solid #7a7171;
+    padding: 14px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: blanchedalmond;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background 0.5s;}
+
+ .submitbtn:hover { background: #7a7171;}
+ 
+ 
+ .copyright { width: 100%; text-align: center; padding: 25px 0; background: #1c1c2a; font-weight: 300; margin-top: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

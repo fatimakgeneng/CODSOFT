@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+    <html>
+        
+        <head>
+
+            <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+            
+            <title>TASK 1 Portfolio using CSS, HTML and JavaScript</title>
+            <link rel = "stylesheet" href="index.css">                           <!--linking css to html-->                         
+            
+            
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+
+
+        </head> 
+        
+            <body>
+
+
+                <div id = "header">     <!--id header will be used in css (Pic lagay gi home per)-->
+
+                    <div class="container">     <!--id header will be used in css (For making a navigation bar)-->
+                        <nav>
+                            <img src="images/logo.jpg" class="logo">
+                            <ul>
+                                <li> <a href="#header"> Home </a>
+                                <li> <a href="#about"> About </a>
+                                <li> <a href="#services"> Services </a>
+                                <li> <a href="#portfolio"> Portfolio </a>
+                                <li> <a href="#contact"> Contact </a>   <!--to have space on left we'll write css for class container-->
+
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="header-text">  <!--to add text and title-->
+                            <h1>Hi, <br> I'm <span>Fatima Khan</span><br> from Karachi Pakistan</h1>
+                            <br><p>Generative AI Engineer</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                                     
+<!---------------------------------------ABOUT------------------------------------------->
+                              
+<div id = "about">
+    <div class = "container"> <!--Have to make two columns-->
+        <div class="row">
+
+            <div class="about-col1"> </div> <!--Left column we'll add image & in right column we'll add text-->
+            <img src="images/d pass bg removed.png">
+
+            <div class="about-col2">
+                <h1 class="abouttitle">About Me</h1>
+                <p class="para">Deeply fascinated by the World of Science, Singing Aficionado, Avid Fan of Badminton <br> and a Tech Savvy.
+                    <br>Presently, enrolled in Cloud Applied Generative AI Engineering (GenEng) program and <br> delving into an array of Programming Languages. Currently honing my skills in <br> JavaScript, TypeScript and Python with an ultimate goal of becoming proficient and <br> evolving into a Full-Stack Developer.
+                        My professional voyage began with a 100% <br> academic scholarship opportunity in Birmingham. Which helped in refining my abilities <br> and establishing the groundwork for my forthcoming pursuits. For the past three years, <br> I've been immersing myself in the dynamic world of Freelance Content Writing across <br> various platforms like Upwork etc. <br> Additionally, I assist candidates in preparing for various English Language Proficiency <br> Exams including IELTS, as well as specialist entry exams such as OET and PTE.
+                        <br>Having finished my O level and A level with a penchant for Genetics. I intend to pursue <br> a degree in Biomedical Science at a prestigious university in England.
+                        <br>Beyond this in 2019, I achieved a significant milestone by winning a Discrimination <br> Case at SEND Tribunal Darlington, UK - A testament to my determination and advocacy <br> for fairness and equality achieved at the tender <br> age of 15!
+                        <br>I'm excited to explore new opportunities, leverage my skills and experiences to make a <br> meaningful impact. <br> Let's connect and collaborate to inspire a positive change and innovation! 
+                </p>
+            <div class="tabtitles">
+                <p class="tablinks active" onclick = "opendescription('skills')"><b>Skills</b></p>
+                <p class="tablinks" onclick = "opendescription('experience')"><b>Experience</b></p>
+                <p class="tablinks" onclick = "opendescription('education')"> <b>Education</b></p>
+            </div>
+            <div class="tabdescription active" id="skills">
+                <ul>
+                    <li><span><b>Full-Stack Developer</b></span> <br> Websites | Mobile Applications</li> <br>
+                    <li><span><b>Freelance Content Writer</b></span><br> Blog posts | Copywriting | Affiliate Reviews</li> <br>
+                    <li><span><b>Freelance Content Creator</b></span><br> Animation | Video Editing | Graphic Designing</li> <br>
+                </ul>
+            </div>
+
+            <div class="tabdescription" id="experience">
+                <ul>
+                    <li><span><b>May 2024 - Present</b></span> <br>Web Development Intern | <span><b>CodSoft</b></span></li> <br>
+                    <li><span><b>May 2024 - Present</b></span><br> Contributing Writer | <span><b>CodeX</b></span></li> <br>
+                    <li><span><b>May 2024 - Present</b></span><br> Author | <span><b>Towards Dev</b></span></li> <br>
+                    <li><span><b>June 2022 - Present</b></span><br> Content Creator | <span><b>YouTube</b></span></li><br>
+                    <li><span><b>June 2021 - Present</b></span><br> Independent Contractor (Freelance) | <span><b>Upwork</b></span></li> <br>
+                
+                </ul>
+            </div>
+
+            <div class="tabdescription" id="education">
+                <ul>
+                    <li><span><b>March 2024 - Present</b></span> <br> Certified Cloud Applied Generative AI Engineering | <span><b>PIAIC (Karachi, PAK)</b></span></li> <br>                        
+                        <li><span><b>Aug 2019 - Jan 2022</b></span><br> A-Level | <span><b>Highbrow College (Karachi, PAK)</b></span></li> <br>
+                        <li><span><b>Sep 2017</b></span><br> O-Level | <span><b>Abbots Bromley School (Birmingham, UK)</b></span></li> <br>
+                        <li><span><b>Aug 2006 - May 2017</b></span><br> Cambridge System | <span><b>QRS&C (Karachi, PAK)</b></span></li><br>
+                </ul>
+            </div>
+
+        </div>
+                        
+    </div>
+</div>
+</div> 
+<!-------------------------------------------------------------------------Services------------------------------------------------->            
+<div id="services">
+    <div class="container">
+        <h1 class="servicestitle"> <b>My Services</b></h1>
+        <div class="serviceslist">
+            <div>
+
+            <h2> <b>Web Development</b></h2><br>
+          
+            <i class="devicon-html5-plain-wordmark colored fontsize"></i> <!--fontsize class mene khud banaya he styling ke liye-->
+            <i class="devicon-css3-plain-wordmark colored fontsize"></i>
+            <i class="devicon-nodejs-plain-wordmark colored fontsize"></i>
+            <i class="devicon-vscode-plain colored fontsize"></i>
+            <i class="devicon-typescript-plain colored fontsize"></i> <br><br>
+            <i class="devicon-javascript-plain colored fontsize"></i>
+            <i class="devicon-git-plain colored fontsize"></i>
+            <i class="devicon-npm-original-wordmark colored fontsize"></i>
+            <i class="devicon-stackoverflow-plain colored fontsize"></i>
+            <i class="devicon-amazonwebservices-plain-wordmark colored fontsize"></i>
+          
+            <br><br>
+            <p>Back-End Development using programming languages JS and TS (syntactic superset) within the VS Code editor.
+                Additionally, Front-End Development with fundamental markup language HTML and styling language CSS.
+                Moreover, proficient in DevOps tool Git and the JS runtime environment NodeJS.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+
+            <h2><b> Content Writing</b></h2><br>
+                          
+            <img src="images/Upwork.png" class="widthheight">
+            <img src="images/Codexcopy.png" class="widthheight1">
+            <img src="images/towardsdev.png" class="widthheight">
+            <img src="images/Medium.png" class="widthheight">                      
+            <br> <br>  
+            <p>Crafting compelling pieces across diverse niches such as health, fashion, pets, beauty and cuisines. My work reflects dedication to delivering meticulously researched, top-notch content that captures audiences' attention, leading towards tangible outcomes.
+                Expertise includes elevating click-through rates, driving traffic (from browser) and increasing audience retention through stellar-rated writing. Futhermore, have a comprehensive understanding of Search Engine Optimization (SEO) and Keyword Research - Latent Semantic Indexing (LSI). A thorough research is also performed each time to ensure the accuracy of the included information and sources.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <h2><b>English Language Proficiency Exam Preparation</b></h2><br>
+            <img src="images/Britishlogo.png" class="widthheight">
+            <img src="images/IDPEducation.png" class="widthheight">
+            <img src="images/Pearson.png" class="widthheight"><br> <br>            
+
+            <p> International English Language Testing System (IELTS), Pearson Test for English (PTE) and Occupational English Test OET
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+
+
+
+        </div>
+    </div>
+</div>                
+<!--------------------------------------------------Portfolio-------------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="portfoliotitle"> <b>Work & Certifications </b></h1><br><br>
+        
+        <div class="worklist">
+            
+            <div class="work1">
+
+                <div class='sk-ww-medium-publication-feed' data-embed-id='25410870'></div><script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
+            </div>
+<br><br>
+            <div class="work2">
+                <div class='sk-ww-youtube-playlists' data-embed-id='25410862'></div><script src='https://widgets.sociablekit.com/youtube-playlists/widget.js' async defer></script>
+                
+            </div>
+
+        </div>
+
+    </div>
+</div> 
+
+<!-------------------------------------------contact----------------------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contactleft">
+                <h1 class="servicestitle">Contact Me</h1> <!--bar bar styling se bachnay k liye services title use kia he-->
+                <p><ion-icon name="mail" class="mailphone"></ion-icon>pinkoosagi@gmail.com</p>
+                <p><ion-icon name="phone-portrait-sharp" class="mailphone"></ion-icon>+92 332 2996307</p>
+                <div class="socials">
+
+                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<br><br>
+                    <a href="https://www.linkedin.com/in/fatimakgeneng" target="_blank"><ion-icon name="logo-linkedin" class="icon-color"></ion-icon></a>
+                    <a href="https://github.com/fatimakgeneng" target="_blank"><ion-icon name="logo-github" class="icon-color"></ion-icon></a>
+                    <a href="https://www.youtube.com/@fatimakgeneng" target="_blank"><ion-icon name="logo-youtube" class="icon-color"></ion-icon></a>
+
+                </div>
+
+                <a href="images/Fatima Khan - CV.pdf" download target="_blank" class="resumebutton">Download Resume</a>
+                           
+            </div>
+
+            <div class="contactright">
+                <form>
+                    <input type ="text" name ="Name" placeholder ="Your Name" required>
+                    <input type ="email" name ="email" placeholder ="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submitbtn">Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2024 "Fatima Khan" All rights reserved.</p>
+    </div>
+
+</div>
+
+
+
+
+                <script>
+                    var tabLinks = document.getElementsByClassName("tablinks") 
+                    var tabDescription = document.getElementsByClassName("tabdescription")
+
+                    function opendescription(tabname){
+                        for(tablink of tabLinks) {tablink.classList.remove('active')}
+
+                        for(tabdescription of tabDescription) {tabdescription.classList.remove('active')}
+                    
+                        event.currentTarget.classList.add ('active')
+
+                        document.getElementById(tabname).classList.add('active')
+                    }
+
+                </script>
+                
+
+            </body>
+
+        </head>
+    </html>        

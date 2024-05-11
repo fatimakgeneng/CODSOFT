@@ -60,6 +60,20 @@ h2 { position: absolute;
     font-size: 50px;
     margin: 0 10px; /* Reset margin */
     padding: 0; /* Reset padding */
+    font-style: oblique;
+}
+
+
+h3 { position: absolute;
+    bottom: 75px;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: #46484b;
+    font-size: 30px;
+    padding: 0;
+    margin: 0 10px;
+    font-style: oblique;
 }
 
 
